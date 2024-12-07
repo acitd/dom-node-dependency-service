@@ -1,5 +1,5 @@
-# HTML Element Dependency Service
-Makes some html elements dependent on others.  
+# Dom Node Dependency Service
+Makes some DOM nodes dependent on others.  
 If the dependency is removed from the DOM, the dependents are also removed after a while.
 
 ## Import
@@ -18,7 +18,7 @@ dnds.start();
 ```
 
 ## Define a depencency
-To define an element as a dependecy you can use the add(...) method with this syntax:
+To define a node as a dependecy you can use the add(...) method with this syntax:
 ```js
 𝘴𝘦𝘳𝘷𝘪𝘤𝘦.dependency(𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘤𝘺).of(...𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘵𝘴);
 ```
