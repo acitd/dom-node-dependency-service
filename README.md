@@ -4,17 +4,21 @@ If the dependency is removed from the DOM, the dependents are also removed after
 
 ## Import
 ```html
-<script src="https://cdn.jsdelivr.net/gh/acitd/dom-node-dependency-service/dist/1.0/DomNodeDependencyService.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/acitd/dom-node-dependency-service/1.0/dist/DomNodeDependencyService.js" defer></script>
+<script type="module" defer>
+	import DomNodeDependencyService from './DomNodeDependencyService.js';
+</script>
 ```
 
 ## Initialization
 You can create the service by defining the root element of the dependencies.
 ```js
-const dependency_service=new DomNodeDependencyService(document.body);
+import DomNodeDependencyService from './DomNodeDependencyService.js';
+const dnds=new DomNodeDependencyService(document.body);
 ```
 Then just start the service.
 ```js
-dependency_service.start();
+dnds.start();
 ```
 
 ## Define a depencency
@@ -27,10 +31,10 @@ To define an element as a dependecy you can use the add(...) method with this sy
 const head=document.querySelector('head');
 const main=document.querySelector('main');
 const footer=document.querySelector('footer');
-dependency_service.dependency(head).of(main,footer);    // we make the main and the footer element dependants of the head
+dnds.dependency(head).of(main,footer);    // we make the main and the footer element dependants of the head
 
 const aside=document.querySelector('aside');
-dependency_service.dependency(head).of(aside);    // we make the aside element too
+dnds.dependency(head).of(aside);    // we make the aside element too
 
 // TEST
 head.remove();    // now the head and all its dependents are removed afte a while
