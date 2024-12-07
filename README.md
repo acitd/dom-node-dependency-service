@@ -10,7 +10,6 @@ import DomNodeDependencyService from 'https://cdn.jsdelivr.net/gh/acitd/dom-node
 ## Initialization
 You can create the service by defining the root element of the dependencies.
 ```js
-import DomNodeDependencyService from './DomNodeDependencyService.js';
 const dnds=new DomNodeDependencyService(document.body);
 ```
 Then just start the service.
