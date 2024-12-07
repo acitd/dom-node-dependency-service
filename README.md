@@ -4,9 +4,9 @@ If the dependency is removed from the DOM, the dependents are also removed after
 
 ## Import
 ```html
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/gh/acitd/dom-node-dependency-service/1.0/dist/DomNodeDependencyService.js" integrity="sha384-crdyZw+XzGV0bmNQl3BkNeIbK2AyCKu64UNTe7xRG8AcPGiSg7kJf7UWzRmNcEcQ">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/gh/acitd/dom-node-dependency-service/1.0/dist/dom-node-dependency-service.js" integrity="sha384-crdyZw+XzGV0bmNQl3BkNeIbK2AyCKu64UNTe7xRG8AcPGiSg7kJf7UWzRmNcEcQ">
 <script type="module">
-  import DomNodeDependencyService from 'https://cdn.jsdelivr.net/gh/acitd/dom-node-dependency-service/1.0/dist/DomNodeDependencyService.js';
+  import DomNodeDependencyService from 'https://cdn.jsdelivr.net/gh/acitd/dom-node-dependency-service/1.0/dist/dom-node-dependency-service.js';
 </script>
 ```
 
