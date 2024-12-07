@@ -21,7 +21,7 @@ dnds.start();
 ```
 
 ## Define a depencency
-To define a node as a dependecy you can use the add(...) method with this syntax:
+To define a node as a dependecy you can use the dependency(...) method and to define its dependents the of(...) method, like this:
 ```js
 𝘴𝘦𝘳𝘷𝘪𝘤𝘦.dependency(𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘤𝘺).of(...𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘵𝘴);
 ```
