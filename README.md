@@ -3,11 +3,8 @@ Makes some html elements dependent on others.
 If the dependency is removed from the DOM, the dependents are also removed after a while.
 
 ## Import
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/acitd/dom-node-dependency-service/1.0/dist/DomNodeDependencyService.js" defer></script>
-<script type="module" defer>
-	import DomNodeDependencyService from './DomNodeDependencyService.js';
-</script>
+```js
+import DomNodeDependencyService from 'https://cdn.jsdelivr.net/gh/acitd/dom-node-dependency-service/1.0/dist/DomNodeDependencyService.js';
 ```
 
 ## Initialization
